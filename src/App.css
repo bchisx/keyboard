@@ -1,0 +1,89 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  width: 100%;
+  position: relative;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  position: relative;
+}
+
+.keyboard-container {
+  position: relative;
+}
+
+.keyboard {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.white-keys {
+  z-index: 1;
+  display: flex;
+}
+
+.black-keys {
+  z-index:2;
+  display: flex;
+  pointer-events: none; /* Prevent black keys from blocking white keys */
+}
+
+.App-button {
+  width: 20px;
+  height: 120px;
+  margin: 0;
+  text-align: center;
+  line-height: 120px;
+  font-size: 14px;
+  border: 1px solid #000;
+}
+
+.white-key {
+  background-color: white;
+  color: black;
+  width: 2.17vw;
+  height: 21vh;
+  pointer-events: auto; /* Allow black keys to be clickable */
+  position: relative;
+  background-color: white;
+  top: -1vh;
+  margin-left: .11vw;
+  margin-right: .11vw;
+}
+
+.black-key {
+  background-color: black;
+  color: white;
+  width: 1.29vw;
+  height: 15vh;
+  pointer-events: auto; /* Allow black keys to be clickable */
+  position: relative;
+  top: -7.3vh; /* Adjust this value to position black keys correctly */
+  margin-left: .485vw;
+  margin-right: .485vw;
+}
+
+.black-key-set {
+  padding-left: 1.36vw;
+  padding-right: 1.36vw;
+  display: flex;
+  top: 0;
+}
+
+.white-key-set {
+  display: flex;
+}
