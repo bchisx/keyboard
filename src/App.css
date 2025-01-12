@@ -72,7 +72,7 @@
   height: 15vh;
   pointer-events: auto; /* Allow black keys to be clickable */
   position: relative;
-  top: -7.3vh; /* Adjust this value to position black keys correctly */
+  top: -7vh; /* Adjust this value to position black keys correctly */
   margin-left: .485vw;
   margin-right: .485vw;
 }
